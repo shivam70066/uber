@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: BlinkMacSystemFont, "SegoeUI", Roboto, Helvetica, Arial,
+    sans-serif, "AppleColorEmoji", "SegoeUIEmoji", "SegoeUISymbol";
+  padding: 0;
+  margin: 0;
+}
+#errmsg span {
+  color: red;
+  margin-left: 4%;
+  font-size: 12px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#navbar {
+  display: flex;
+  min-height: 64px;
+  background-color: black;
+}
+
+#logo, #login {
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  padding: 0px 64px;
+}
+#login{
+  position: absolute;
+  right: 100px;
+}
+#login a{
+  font-size: 18px;
+  padding: 7px 16px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  border-radius: 20px;
+}
+#login a:hover{
+  background-color: rgb(226, 226, 226);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  /* height: 92.5vh; */
+}
+#formDiv {
+  width: 21%;
+  min-height: 500px;
+  max-width: 360px;
+  font-family: BlinkMacSystemFont, "SegoeUI", Roboto, Helvetica, Arial,
+    sans-serif, "AppleColorEmoji", "SegoeUIEmoji", "SegoeUISymbol";
+  font-size: 16px;
+}
+
+#formDiv h1 {
+  text-align: center;
+  font-family: BlinkMacSystemFont, "SegoeUI", Roboto, Helvetica, Arial,
+    sans-serif, "AppleColorEmoji", "SegoeUIEmoji", "SegoeUISymbol";
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#formDiv input {
+  border-radius: 8px;
+  /* background-color: #c2c2c2; */
+  display: block;
+  border: 1px solid black;
+  width: 80%;
+  /* margin: 20px auto 10px auto; */
+  margin: 15px auto 0px auto;
+  line-height: 24px;
+  padding: 10px 20px;
+}
+
+input[type="radio"] {
+  /* display: inline; */
+  width: 100px;
+  border-color: #ff651b;
+  margin: 20px auto 10px auto;
+  padding: 5px 20px;
+}
+
+#submit-btn {
+  font-family: -apple-system, BlinkMacSystemFont, "SegoeUI", Roboto, Helvetica,
+    Arial, sans-serif, "AppleColorEmoji", "SegoeUIEmoji", "SegoeUISymbol";
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  background-color: black;
+  margin: 10px auto;
+  display: block;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+}
+label {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+#gender {
+  display: flex;
+}
+#gender input {
+  width: 10px;
+  margin: 0px 17px;
+}
+
+@media only screen and (max-width: 768px) {
+  
+
+    #formDiv {
+      margin-top: 60px;
+      width: 100%;
+    }
+    #logo {
+      padding: 0px 20px;
+    }
+    #login{
+      right:20px;
+      padding: 0px 10px;
+    }
+    #login a{
+      font-size: 16px;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+}
